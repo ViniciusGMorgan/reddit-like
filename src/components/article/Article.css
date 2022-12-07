@@ -1,7 +1,6 @@
 .container-article {
   display: flex;
-  justify-content: center;
-  margin: 1% 10%;
+  width: 100%;
 }
 
 .container-upvotes {

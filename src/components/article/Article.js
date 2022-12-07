@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Article.css";
 import { ImCtrl, ImImage, ImBubble } from "react-icons/im";
 
@@ -30,7 +30,7 @@ export function Article({ infos }) {
           <div className="hours">43 minutes ago</div>
           <span className="point">.</span>
           <div className="comments">
-            <ImBubble></ImBubble> &nbsp;
+            <ImBubble></ImBubble>&nbsp;
             {infos?.comments}
             &nbsp;Comments
           </div>

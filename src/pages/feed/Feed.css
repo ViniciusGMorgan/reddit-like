@@ -1,0 +1,12 @@
+.button-load-more {
+  height: 50px;
+  width: 100%;
+  background-color: #f4f4f1;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+  color: #e3472f;
+  align-items: center;
+  font-weight: bold;
+  margin: 20px 0px;
+}

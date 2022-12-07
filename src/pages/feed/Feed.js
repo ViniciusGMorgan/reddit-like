@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Article } from "../../components/article/Article";
 import { getLinks } from "./FeedService";
+import { FiRefreshCw } from "react-icons/fi";
+import "./Feed.css";
 
 export function Feed() {
   const [links, setLinks] = useState([]);
@@ -30,5 +32,14 @@ export function Feed() {
         return category;
     }
   }
-  return links.map((item) => <Article infos={item}></Article>);
+  return (
+    <div className="container-feed">
+      {links.map((item) => (
+        <Article infos={item}></Article>
+      ))}
+      <button className="button-load-more">
+        <FiRefreshCw></FiRefreshCw>&nbsp; Load More
+      </button>
+    </div>
+  );
 }
