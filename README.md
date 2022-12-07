@@ -1,6 +1,7 @@
 # Teste Frontend Leroy Merlin Brasil
 
 ## Escopo do Teste
+
 O desenvolvimento do teste se baseia numa interface já existente, encontrada na pasta deste projeto. Uma dashboard simples para visualização/interação de links externos.
 
 O objetivo é avaliar a capacidade de estimativa do(a) desenvolvedor(a), em conjunto com a capacidade de se trabalhar com uma interface inacabada, e bons padrões de código.
@@ -14,16 +15,19 @@ A interface deve ser construida se baseando na imagem disponibilizada (interface
 Ou seja, só tem o png mesmo para se basear.
 
 ### Funcionalidade da interface
+
 A interface deve atender os seguintes critérios:
 
 - Permitir filtrar as postagens pela barra de pesquisa (Se eu digitar algo, deve filtrar pelo o que foi digitado, caso não encontre nada, mostrar um feedback).
 - Filtrar as postagens a partir de filtros pré determinados
- - Popularidade
- - Data
- - Comentários
+- Popularidade
+- Data
+- Comentários
 
 ### Construção da interface
+
 Em critérios de tecnologia, é esperado:
+
 - Teste seja feito em React, utilizando Redux
 - Utilizar pattern de componentização
 - Consumir [os dados json](https://www.mocky.io/v2/5a6bc16631000078341b8b77), para popular os links na interface
@@ -33,5 +37,22 @@ Em critérios de tecnologia, é esperado:
 - Crossbrowser (IEegde+, Chrome e FF)
 
 #### Observações
+
 - O rodapé, links e ícones de usuários não precisam ter interação
 - Não tenha medo de fazer perguntas, de verdade!
+
+## :computer: Rodando o projeto
+
+```bash
+  # Clonar o repositório
+  $ git clone https://github.com/ViniciusGMorgan/reddit-like.git
+
+  # Entrar no diretório:
+  $ cd reddit-like
+
+  # Instalar as dependências:
+  $ yarn
+
+  # Rodar a aplicação:
+  $ yarn start
+```
