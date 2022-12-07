@@ -1,21 +1,28 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { ImMenu, ImSearch, ImPlus, ImImage } from "react-icons/im";
 import { BsFillHexagonFill } from "react-icons/bs";
-
+import { filter } from "../../store/modules/header/action";
 import "./Header.css";
 
 export function Header() {
+  const dispatch = useDispatch();
+  function handleChange(e) {
+    dispatch(filter(e.target.value));
+  }
   return (
     <header>
       <section className="section-1">
         <div className="relative">
           <BsFillHexagonFill size="33" color="#e3472f" />
           <div className="text-icon">UX</div>
-        </div>{" "}
+        </div>
         <div className="line"></div>
-        <ImMenu className="menu" size="18" color="#545454"></ImMenu>
+        <div className="menu">
+          <ImMenu color="#545454"></ImMenu>
+        </div>
         <div className="relative">
-          <input />
+          <input onChange={handleChange} />
           <ImSearch className="search" color="#d6d6d6" size="12"></ImSearch>
         </div>
       </section>
