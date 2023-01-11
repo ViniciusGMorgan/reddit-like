@@ -1,4 +1,4 @@
-# Teste Frontend Leroy Merlin Brasil
+# Teste Reddit-Like
 
 ## Escopo do Teste
 
